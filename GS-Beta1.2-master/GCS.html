@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Style the header */
+.header {
+  background-color: #ed1c24;
+  color:white;  
+  text-align: left;
+  margin-bottom:20px;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+<div class="header col-xs-12 col-sm-12 col-lg-12">
+  <h1 style="margin-left:20px">GCS</h1>  
+</div>
+</div>
+
+<div class="row" style="border-style: solid;border-color: black;margin-left: 10px;margin-right: 10px;margin-bottom:20px;">
+  <div class="col-xs-12 col-sm-12 col-lg-12" style="width:100%">
+    <img src="Canva/demo.jpg" style="width:100%;">
+  </div> 
+</div>
+
+<div class="row">
+  <div class="col-xs-4 col-sm-4 col-lg-4" style="background-color:red;"></div>
+  <div class="col-xs-8 col-sm-8 col-lg-8" style="background-color:green;"></div>
+</div>
+
+</body>
+</html>
